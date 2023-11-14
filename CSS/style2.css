@@ -1,0 +1,130 @@
+/* Variables */
+:root{
+    --js: #F0DB4F;
+    --letra: #fff;
+    --fondo: rgb(69, 67, 62);
+}
+/* Fuentes */
+@font-face {
+    font-family: 'Liberation serif';
+    src: url('../FUENTES/LiberationSerif-Regular.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../FUENTES/Times New Roman.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Times New Roman Bold';
+    src: url('../FUENTES/times new roman bold.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+/* Estilos */
+body{
+    margin: 0;
+    color: var(--letra);
+    font-family: 'Times New Roman';
+    background-color: #383836;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    text-decoration: none;
+}
+.papa{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+header{
+    margin-top: 1.5%;
+    display: flex;
+    background-color: var(--fondo);
+    height: 120px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+header h2{
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-size: 20px;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.logo{
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+nav .boton{
+    font-family: 'Times New Roman Bold';
+    font-size: 20px;
+    padding: 10px 25px;
+    color: var(--letra);
+    background: var(--js);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0px;
+    margin: 10px;
+}
+nav .boton:hover{
+    font-size: 20px;
+    border: 2px solid var(--letra);
+}
+#pass{
+    width: 100%;
+    text-align: center;
+    border-radius: 40px;
+    background-color: var(--fondo);
+    position: relative;
+    font-family: 'Liberation serif';
+    font-size: 20;
+    font-weight: 20; 
+}
+
+.passive {
+    background-color: var(--fondo);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5%;
+    border-radius: 40px;
+    position: relative;
+    padding: 10px;
+}
+
+.passive h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--js);
+}
+
+.passive p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+#botonArriba{
+    position: fixed;
+    bottom: -100px;
+    right: 50%;
+    width: 50px;
+    transition: all 1s;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--js);
+    border-radius: 5px;
+    border-right: 1px solid #BD7332
+}

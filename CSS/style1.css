@@ -1,0 +1,133 @@
+/* Variables */
+:root {
+    --js: #F0DB4F;
+    --letra: #fff;
+    --fondo: rgb(69, 67, 62);
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'Liberation serif';
+    src: url('../FUENTES/LiberationSerif-Regular.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../FUENTES/Times New Roman.ttf');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Times New Roman Bold';
+    src: url('../FUENTES/times new roman bold.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Estilos */
+body {
+    margin: 0;
+    color: var(--letra);
+    font-family: 'Times New Roman';
+    background-color: #383836;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    text-decoration: none;
+}
+
+.papa {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+header {
+    margin-top: 1.5%;
+    display: flex;
+    background-color: var(--fondo);
+    height: 120px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+header h2 {
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-size: 20px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.logo {
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+nav .boton {
+    font-family: 'Times New Roman Bold';
+    font-size: 20px;
+    padding: 10px 25px;
+    color: var(--letra);
+    background: var(--js);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0px;
+    margin: 10px;
+}
+
+nav .boton:hover {
+    font-size: 20px;
+    border: 2px solid var(--letra);
+}
+
+#cond {
+    width: 100%;
+    text-align: center;
+    border-radius: 40px;
+    background-color: var(--fondo);
+    position: relative;
+    font-family: 'Liberation serif';
+    font-size: 20;
+    font-weight: 20;
+}
+
+.conditionals {
+    border-radius: 40px;
+    background-color: var(--fondo);
+    position: relative;
+    padding: 10px;
+}
+
+.conditionals h2 {
+    color: var(--js);
+    font-size: 24px; /* Ajustado el tamaño de la fuente */
+    margin-bottom: 10px; /* Añadido margen inferior */
+}
+
+.conditionals p {
+    font-size: 18px; /* Ajustado el tamaño de la fuente */
+    line-height: 1.5; /* Ajustada la altura de la línea para una mejor legibilidad */
+    margin-bottom: 15px; /* Añadido margen inferior */
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--js);
+    border-radius: 5px;
+    border-right: 1px solid #BD7332;
+}
